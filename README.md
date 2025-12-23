@@ -18,13 +18,13 @@ A modern, high-performance portfolio website built with **Next.js** and deployed
 
 | Step | Task | Status |
 | :--- | :--- | :--- |
-| 1 | Certification | [ ] |
+| 1 | Certification | [x] |
 | 2 | HTML | [x] |
 | 3 | CSS | [x] |
-| 4 | Static Website | [/] |
+| 4 | Static Website | [x] |
 | 5 | HTTPS | [ ] |
 | 6 | DNS | [ ] |
-| 7 | JavaScript (Next.js) | [/] |
+| 7 | JavaScript (Next.js) | [x] |
 | 8 | Database | [ ] |
 | 9 | API | [ ] |
 | 10 | Python | [ ] |
