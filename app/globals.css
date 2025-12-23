@@ -3,21 +3,22 @@
 @theme {
     --color-primary: #8a2be2;
     --color-secondary: #00d4ff;
-    --font-inter: "Inter", sans-serif;
+    --font-sans: "Inter", sans-serif;
+    --font-serif: "Merriweather", serif;
 }
 
 :root {
-    --background: #ffffff;
-    --foreground: #111111;
-    --subtext: rgba(0, 0, 0, 0.6);
-    --border: rgba(0, 0, 0, 0.1);
+    --background: #fcfcfc;
+    --foreground: #222222;
+    --subtext: #555555;
+    --border: #e5e5e5;
 }
 
 [data-theme='dark'] {
-    --background: #000000;
-    --foreground: #ffffff;
-    --subtext: rgba(255, 255, 255, 0.6);
-    --border: rgba(255, 255, 255, 0.1);
+    --background: #191919;
+    --foreground: #f0f0f0;
+    --subtext: #a0a0a0;
+    --border: #333333;
 }
 
 body {
@@ -35,7 +36,8 @@ body {
 }
 
 .experience-dot {
-    @apply absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-purple-500 shadow-[0_0_8px_rgba(168, 85, 247, 0.5)];
+    @apply absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-purple-500;
+    box-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
 }
 
 .text-sub {
