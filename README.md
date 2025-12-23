@@ -1,4 +1,4 @@
-# Azure Cloud Resume Challenge - Next.js Portfolio
+# Azure Cloud - Next.js Portfolio
 
 This repository contains my submission for the [Cloud Resume Challenge (Azure)](https://cloudresumechallenge.dev/docs/the-challenge/azure/). 
 
