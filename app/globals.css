@@ -32,7 +32,7 @@ body {
 }
 
 .experience-card {
-    @apply relative pl-8 border-l border-[var(--border)] pb-8 last:pb-0 transition-colors;
+    @apply relative pl-6 border-l border-[var(--border)] pb-10 last:pb-0 transition-colors;
 }
 
 .experience-dot {
