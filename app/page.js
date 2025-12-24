@@ -58,13 +58,13 @@ export default function Home() {
                         variants={fadeInUp}
                         className="text-2xl font-sans font-medium text-sub"
                     >
-                        Frontend Developer Intern & Cloud Enthusiast
+                        Software Developer & Cloud Practitioner
                     </motion.p>
                     <motion.p
                         variants={fadeInUp}
                         className="text-base font-sans font-medium tracking-wide text-sub/70"
-                    >
-                        California, USA
+                    > 
+                        HCMC, VietNam 
                     </motion.p>
                 </motion.div>
 
@@ -77,13 +77,12 @@ export default function Home() {
                     </motion.h2>
                     <motion.div variants={staggerContainer} className="space-y-6 text-sub leading-relaxed text-lg">
                         <motion.p variants={fadeInUp}>
-                            Expert in cloud architecture with <span className="font-bold text-[var(--foreground)]">Azure</span> and <span className="font-bold text-[var(--foreground)]">Next.js</span>.
-                            I specialize in designing and implementing performant web applications.
-                            With growing expertise in <span className="font-bold text-[var(--foreground)]">Python, Kubernetes,</span> and <span className="font-bold text-[var(--foreground)]">Serverless architecture</span>.
+                            Interesting in cloud architecture with <span className="font-bold text-[var(--foreground)]">Azure</span> and <span className="font-bold text-[var(--foreground)]">Next.js</span>.
+                            I enjoy learning how to design and build performant systems.
+                            With growing expertise in <span className="font-bold text-[var(--foreground)]"> .NET,</span> and <span className="font-bold text-[var(--foreground)]">Serverless architecture</span>.
                         </motion.p>
                         <motion.p variants={fadeInUp}>
-                            Beyond technical architecture, I am passionate about DevOps practices and building
-                            resilient systems that can scale effectively while maintaining high availability.
+                           Beyond implementation, I'm keen to learn more about cloud engineering best practices and how to build reliable, scalable systems that support high availability.
                         </motion.p>
                     </motion.div>
                 </motion.div>
@@ -128,7 +127,7 @@ export default function Home() {
                     <motion.div variants={fadeInUp} className="experience-card">
                         <div className="experience-dot"></div>
                         <p className="text-sm font-semibold text-sub/60 mb-2 tracking-wider">July, 2022 - 2023</p>
-                        <h3 className="text-2xl font-serif font-bold leading-none mb-3">System Engineer</h3>
+                        <h3 className="text-2xl font-serif font-ybold leading-none mb-3">System Engineer</h3>
                         <p className="text-blue-500 font-bold mb-4 tracking-wide text-lg">Company Y</p>
                         <p className="text-sub leading-relaxed text-lg">
                             Assisted in maintaining large-scale distributed systems and optimizing infrastructure performance.
@@ -145,7 +144,7 @@ export default function Home() {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="pt-16 border-t border-[var(--border)] flex justify-between items-center text-sub/60 text-xs font-semibold tracking-wide"
             >
-                <p>© 2025 Jett Pham</p>
+                <p>© 2025 Jett - Built with Next.js</p>
                 <div className="flex items-center gap-3">
                     <span className="uppercase">Visitor Count:</span>
                     <span className="text-[var(--foreground)] font-mono text-base tracking-tighter">#000000</span>
