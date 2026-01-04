@@ -4,13 +4,17 @@ This repository contains my submission for the [Cloud Resume Challenge (Azure)](
 
 ## 🚀 Project Overview
 
-A modern, high-performance portfolio website built with **Next.js** and deployed on **Azure**. 
+A modern, high-performance portfolio website built with **Next.js** and deployed on **Azure**.
+
+### 🔗 Links
+- **Live Demo**: [https://azurestorageaccountjett.z23.web.core.windows.net/](https://azurestorageaccountjett.z23.web.core.windows.net/)
+ 
 
 ### 🛠️ Tech Stack
-- **Frontend**: Next.js (JavaScript), Vanilla CSS
+- **Frontend**: Next.js (JavaScript), Tailwind CSS
 - **Backend API**: Azure Functions
 - **Database**: Azure Cosmos DB
-- **Deployment**: Azure Static Web Apps
+- **Deployment**: Azure Static Web Apps with Azure Storage Blob
 - **CI/CD**: GitHub Actions
 - **Infrastructure**: Bicep / Terraform
 
@@ -25,8 +29,8 @@ A modern, high-performance portfolio website built with **Next.js** and deployed
 | 5 | HTTPS | [ ] |
 | 6 | DNS | [ ] |
 | 7 | JavaScript (Next.js) | [x] |
-| 8 | Database | [ ] |
-| 9 | API | [ ] |
+| 8 | Database | [x] |
+| 9 | API | [x] |
 | 10 | Python | [ ] |
 | 11 | Tests | [ ] |
 | 12 | Infrastructure as Code | [ ] |
