@@ -12,7 +12,7 @@ A modern, high-performance portfolio website built with **Next.js** and deployed
 
 ### 🛠️ Tech Stack
 - **Frontend**: Next.js (JavaScript), Tailwind CSS
-- **Backend API**: Azure Functions
+- **Backend API**: Azure Functions (C#)
 - **Database**: Azure Cosmos DB
 - **Deployment**: Azure Static Web Apps with Azure Storage Blob
 - **CI/CD**: GitHub Actions
