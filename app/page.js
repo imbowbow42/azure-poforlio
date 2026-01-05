@@ -1,5 +1,5 @@
 'use client';
-
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ThemeToggle } from '@/components/theme-toggle';
 import { motion } from 'framer-motion';
@@ -19,6 +19,24 @@ const staggerContainer = {
 };
 
 export default function Home() {
+    const [count, setCount] = useState('------');
+
+    useEffect(() => {
+        const fetchCount = async () => {
+            try {
+                const response = await fetch('https://jettapi.azurewebsites.net/api/VisitorCounterApi?code=2xLSMsuWj_wTQuqOhIaqc5IZntwUueytdM8V0Tp3Vnu0AzFuH7-dZg==');
+                if (response.ok) {
+                    const data = await response.json();
+                    setCount(data.Count.toString().padStart(6, '0'));
+                }
+            } catch (error) {
+                console.error('Error fetching visitor count:', error);
+            }
+        };
+
+        fetchCount();
+    }, []);
+
     return (
         <main className="space-y-16">
             {/* Header Section */}
@@ -63,8 +81,8 @@ export default function Home() {
                     <motion.p
                         variants={fadeInUp}
                         className="text-base font-sans font-medium tracking-wide text-sub/70"
-                    > 
-                        HCMC, VietNam 
+                    >
+                        HCMC, VietNam
                     </motion.p>
                 </motion.div>
 
@@ -82,7 +100,7 @@ export default function Home() {
                             With growing expertise in <span className="font-bold text-[var(--foreground)]"> .NET,</span> and <span className="font-bold text-[var(--foreground)]">Serverless architecture</span>.
                         </motion.p>
                         <motion.p variants={fadeInUp}>
-                           Beyond implementation, I'm keen to learn more about cloud engineering best practices and how to build reliable, scalable systems that support high availability.
+                            Beyond implementation, I'm keen to learn more about cloud engineering best practices and how to build reliable, scalable systems that support high availability.
                         </motion.p>
                     </motion.div>
                 </motion.div>
@@ -95,7 +113,7 @@ export default function Home() {
                         Resume
                     </button>
                     <div className="flex items-center gap-6 font-medium text-base text-sub">
-                        <a href="#" className="hover:text-[var(--foreground)] transition-colors">Github</a>
+                        <a href="#" className="hover:text-[var(--foreground)] transition-colors">Github ( Pushed by Github Action)</a>
                         <a href="#" className="hover:text-[var(--foreground)] transition-colors">LinkedIn</a>
                     </div>
                 </motion.div>
@@ -147,7 +165,7 @@ export default function Home() {
                 <p>© 2025 Jett - Built with Next.js</p>
                 <div className="flex items-center gap-3">
                     <span className="uppercase">Visitor Count:</span>
-                    <span className="text-[var(--foreground)] font-mono text-base tracking-tighter">#000000</span>
+                    <span className="text-[var(--foreground)] font-mono text-base tracking-tighter">#{count}</span>
                 </div>
             </motion.footer>
         </main>

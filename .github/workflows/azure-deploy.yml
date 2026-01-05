@@ -1,0 +1,38 @@
+name:  Deploy to Azure Storage Account ( Static web)
+on:
+  push:
+    branches:
+      - main
+
+
+jobs: 
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub Action
+        uses: actions/checkout@v4
+
+      # Step 3: Set up project environment
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+
+      # Step 4: Build Next.js static site
+      - name: Build project
+        run: npm run build
+
+     # Step 5: Upload to Azure Static Website
+      - name: Deploy to Azure Storage Static Website
+        uses: azure/cli@v2
+        with:
+          inlineScript: |
+            az storage blob upload-batch \
+              --account-name ${{ secrets.AZURE_STORAGE_ACCOUNT_NAME }} \
+              --account-key ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY }} \
+              --destination '$web' \
+              --source ./out \
+              --overwrite
