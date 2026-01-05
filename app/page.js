@@ -24,7 +24,7 @@ export default function Home() {
     useEffect(() => {
         const fetchCount = async () => {
             try {
-                const response = await fetch('https://jettapi.azurewebsites.net/api/VisitorCounterApi?code=2xLSMsuWj_wTQuqOhIaqc5IZntwUueytdM8V0Tp3Vnu0AzFuH7-dZg==');
+                const response = await fetch(process.env.AZURE_FUNCTION_URL);
                 if (response.ok) {
                     const data = await response.json();
                     setCount(data.Count.toString().padStart(6, '0'));
