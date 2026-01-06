@@ -25,7 +25,7 @@ export default function Home() {
         const fetchCount = async () => {
             try {
 
-                const response = await fetch(process.env.NEXT_PUBLIC_AZURE_FUNCTION_URL);
+                const response = await fetch("https://jettapi.azurewebsites.net/api/VisitorCounterApi");
                 if (response.ok) {
                     const data = await response.json();
                     setCount(data.Count.toString().padStart(6, '0'));
