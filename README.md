@@ -26,7 +26,7 @@ A modern, high-performance portfolio website built with **Next.js** and deployed
 | 2 | HTML | [x] |
 | 3 | CSS | [x] |
 | 4 | Static Website | [x] |
-| 5 | HTTPS | [ ] |
+| 5 | HTTPS | [x] |
 | 6 | DNS | [ ] |
 | 7 | JavaScript (Next.js) | [x] |
 | 8 | Database | [x] |
@@ -36,7 +36,7 @@ A modern, high-performance portfolio website built with **Next.js** and deployed
 | 12 | Infrastructure as Code | [ ] |
 | 13 | Source Control | [x] |
 | 14 | CI/CD (Backend) | [ ] |
-| 15 | CI/CD (Frontend) | [ ] |
+| 15 | CI/CD (Frontend) | [x] |
 | 16 | Blog Post | [ ] |
 
 ## 🛠️ Local Development
