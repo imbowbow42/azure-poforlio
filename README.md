@@ -7,7 +7,7 @@ This repository contains my submission for the [Cloud Resume Challenge (Azure)](
 A modern, high-performance portfolio website built with **Next.js** and deployed on **Azure**.
 
 ### 🔗 Links
-- **Live Demo**: [https://azurestorageaccountjett.z23.web.core.windows.net/](https://azurestorageaccountjett.z23.web.core.windows.net/)
+- **Live Demo**: [resume.jettpham.cloud/](resume.jettpham.cloud)
  
 
 ### 🛠️ Tech Stack
