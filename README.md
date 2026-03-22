@@ -1,16 +1,17 @@
 # Azure Cloud - Next.js Portfolio
 
-This repository contains my submission for the [Cloud Resume Challenge (Azure)](https://cloudresumechallenge.dev/docs/the-challenge/azure/). 
+This repository contains my submission for the [Cloud Resume Challenge (Azure)](https://cloudresumechallenge.dev/docs/the-challenge/azure/).
 
 ## 🚀 Project Overview
 
 A modern, high-performance portfolio website built with **Next.js** and deployed on **Azure**.
 
 ### 🔗 Links
+
 - **Live Demo**: [resume.jettpham.cloud](https://resume.jettpham.cloud/)
- 
 
 ### 🛠️ Tech Stack
+
 - **Frontend**: Next.js (JavaScript), Tailwind CSS
 - **Backend API**: Azure Functions (C#)
 - **Database**: Azure Cosmos DB
@@ -20,24 +21,24 @@ A modern, high-performance portfolio website built with **Next.js** and deployed
 
 ## 📈 Challenge Progress
 
-| Step | Task | Status |
-| :--- | :--- | :--- |
-| 1 | Certification | [x] |
-| 2 | HTML | [x] |
-| 3 | CSS | [x] |
-| 4 | Static Website | [x] |
-| 5 | HTTPS | [x] |
-| 6 | DNS | [ ] |
-| 7 | JavaScript (Next.js) | [x] |
-| 8 | Database | [x] |
-| 9 | API | [x] |
-| 10 | Python | [ ] |
-| 11 | Tests | [ ] |
-| 12 | Infrastructure as Code | [ ] |
-| 13 | Source Control | [x] |
-| 14 | CI/CD (Backend) | [ ] |
-| 15 | CI/CD (Frontend) | [x] |
-| 16 | Blog Post | [ ] |
+| Step | Task                   | Status |
+| :--- | :--------------------- | :----- |
+| 1    | Certification          | [x]    |
+| 2    | HTML                   | [x]    |
+| 3    | CSS                    | [x]    |
+| 4    | Static Website         | [x]    |
+| 5    | HTTPS                  | [x]    |
+| 6    | DNS                    | [x]    |
+| 7    | JavaScript (Next.js)   | [x]    |
+| 8    | Database               | [x]    |
+| 9    | API                    | [x]    |
+| 10   | Python                 | [ ]    |
+| 11   | Tests                  | [ ]    |
+| 12   | Infrastructure as Code | [ ]    |
+| 13   | Source Control         | [x]    |
+| 14   | CI/CD (Backend)        | [ ]    |
+| 15   | CI/CD (Frontend)       | [x]    |
+| 16   | Blog Post              | [ ]    |
 
 ## 🛠️ Local Development
 

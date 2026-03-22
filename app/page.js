@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import { ThemeToggle } from "@/components/theme-toggle";
 import { motion } from "framer-motion";
+import { ProjectCard } from "@/components/project-card";
+import { BadgeCheck, Download, Mail } from "lucide-react";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
@@ -93,7 +95,8 @@ export default function Home() {
             variants={fadeInUp}
             className="text-3xl font-serif font-bold leading-tight"
           >
-            Building Scalable Solutions for Tomorrow
+            Building <span className="gradient-text">Scalable Solutions</span>{" "}
+            for Tomorrow
           </motion.h2>
           <motion.div
             variants={staggerContainer}
@@ -127,19 +130,26 @@ export default function Home() {
           variants={fadeInUp}
           className="flex items-center gap-6 pt-6"
         >
-          <button className="px-8 py-3 rounded-full bg-[var(--foreground)] text-[var(--background)] font-bold text-base hover:opacity-90 transition-opacity">
-            Resume
-          </button>
+          <a
+            href="mailto:jett@example.com"
+            className="px-8 py-3 flex items-center gap-2 rounded-full bg-[var(--foreground)] text-[var(--background)] font-bold text-base hover:opacity-90 transition-opacity"
+          >
+            <Download size={18} /> Resume
+          </a>
           <div className="flex items-center gap-6 font-medium text-base text-sub">
             <a
-              href="#"
+              href="https://github.com/imbowbow42"
               className="hover:text-[var(--foreground)] transition-colors"
+              target="_blank"
+              rel="noreferrer"
             >
               Github
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/jettpham"
               className="hover:text-[var(--foreground)] transition-colors"
+              target="_blank"
+              rel="noreferrer"
             >
               LinkedIn
             </a>
@@ -171,7 +181,7 @@ export default function Home() {
             <h3 className="text-2xl font-serif font-bold leading-none mb-3">
               Frontend Developer Intern
             </h3>
-            <p className="text-blue-500 font-bold mb-4 tracking-wide text-lg">
+            <p className="text-[var(--accent)] font-bold mb-4 tracking-wide text-lg">
               Company X
             </p>
             <p className="text-sub leading-relaxed text-lg">
@@ -187,10 +197,10 @@ export default function Home() {
             <p className="text-sm font-semibold text-sub/60 mb-2 tracking-wider">
               July, 2022 - 2023
             </p>
-            <h3 className="text-2xl font-serif font-ybold leading-none mb-3">
+            <h3 className="text-2xl font-serif font-bold leading-none mb-3">
               System Engineer
             </h3>
-            <p className="text-blue-500 font-bold mb-4 tracking-wide text-lg">
+            <p className="text-[var(--accent)] font-bold mb-4 tracking-wide text-lg">
               Company Y
             </p>
             <p className="text-sub leading-relaxed text-lg">
@@ -199,6 +209,160 @@ export default function Home() {
             </p>
           </motion.div>
         </div>
+      </motion.section>
+
+      {/* Certifications & Skills Section */}
+      <motion.section
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.3 }}
+        variants={staggerContainer}
+        className="space-y-12"
+      >
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Certifications */}
+          <div className="space-y-8">
+            <motion.h2
+              variants={fadeInUp}
+              className="text-4xl font-serif font-bold text-[var(--foreground)]"
+            >
+              Certifications
+            </motion.h2>
+            <motion.div
+              variants={fadeInUp}
+              className="flex items-start gap-4 p-6 rounded-2xl border border-[var(--border)] bg-[var(--card-bg)] hover:border-[var(--accent)]/50 transition-colors group"
+            >
+              <div className="text-[var(--accent)] mt-1">
+                <BadgeCheck size={32} />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold font-serif mb-1 group-hover:text-[var(--accent)] transition-colors">
+                  Microsoft Certified: Azure Fundamentals
+                </h3>
+                <p className="text-sub font-medium mb-2">AZ-900</p>
+                <a
+                  href="https://learn.microsoft.com/api/credentials/share/en-us/PhamBuiGiaBao-7251/2D439EC97A7C4A93?sharingId=1C245356DB2673C7"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-sm font-semibold text-[var(--accent)] hover:opacity-80 transition-opacity inline-flex items-center gap-1"
+                >
+                  Verify Credentials ↗
+                </a>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Skills */}
+          <div className="space-y-8">
+            <motion.h2
+              variants={fadeInUp}
+              className="text-4xl font-serif font-bold text-[var(--foreground)]"
+            >
+              Tech Stack
+            </motion.h2>
+            <motion.div variants={fadeInUp} className="flex flex-wrap gap-3">
+              {[
+                "Azure Cloud",
+                "Next.js",
+                "React",
+                ".NET",
+                "Node.js",
+                "Networking",
+                "CosmosDB",
+                "Tailwind CSS",
+                "Serverless",
+                "CI/CD",
+                "GitHub Actions",
+              ].map((skill) => (
+                <span
+                  key={skill}
+                  className="px-4 py-2 text-sm font-semibold rounded-full border border-[var(--border)] bg-[var(--card-bg)] hover:border-[var(--accent)]/50 hover:bg-[var(--accent)]/5 transition-all cursor-default"
+                >
+                  {skill}
+                </span>
+              ))}
+            </motion.div>
+          </div>
+        </div>
+      </motion.section>
+
+      {/* Projects Section */}
+      <motion.section
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={staggerContainer}
+        className="space-y-12"
+      >
+        <motion.div
+          variants={fadeInUp}
+          className="flex justify-between items-end"
+        >
+          <h2 className="text-4xl font-serif font-bold text-[var(--foreground)]">
+            Selected Works
+          </h2>
+        </motion.div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <ProjectCard
+            title="Cloud Resume Challenge"
+            description="A full-stack, cloud-native resume built on Azure. Features a static frontend hosted on Azure Storage/CDN, a serverless Python API via Azure Functions, and a CosmosDB Table API for visitor tracking, all deployed via GitHub Actions CI/CD."
+            techStack={[
+              "Azure Functions",
+              "CosmosDB",
+              "Next.js",
+              "Python",
+              "CI/CD",
+            ]}
+            githubLink="https://github.com/imbowbow42/azure-poforlio"
+            liveLink="#"
+          />
+          <ProjectCard
+            title="Auth API"
+            description="A robust authentication API built with Express.js and TypeScript, handling user registration, standard login, and third-party Google authentication. Connects to Azure Cosmos DB for data storage."
+            techStack={["TypeScript", "Express.js", "Azure Cosmos DB", "JWT"]}
+            githubLink="https://github.com/imbowbow42/auth-api"
+            liveLink="https://login-api.jettpham.cloud"
+          />
+        </div>
+
+        <motion.div variants={fadeInUp} className="pt-4">
+          <a
+            href="#"
+            className="inline-flex items-center gap-2 text-[var(--accent)] font-bold hover:opacity-80 transition-opacity group"
+          >
+            Read my Cloud Resume Challenge Blog Post{" "}
+            <span className="group-hover:translate-x-1 transition-transform">
+              →
+            </span>
+          </a>
+        </motion.div>
+      </motion.section>
+
+      {/* Contact Section */}
+      <motion.section
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true, amount: 0.5 }}
+        variants={staggerContainer}
+        className="py-8 border-t border-[var(--border)] flex flex-col sm:flex-row justify-between items-center gap-6"
+      >
+        <motion.div variants={fadeInUp}>
+          <h2 className="text-3xl font-serif font-bold">
+            Let's build something.
+          </h2>
+          {/* <p className="text-sub text-lg">
+            I'm currently open for new opportunities.
+          </p> */}
+        </motion.div>
+        <motion.div variants={fadeInUp}>
+          <a
+            href="mailto:phamgbao42@gmail.com"
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[var(--foreground)] text-[var(--background)] font-bold text-lg hover:scale-105 transition-transform shadow-xl hover:shadow-[var(--accent)]/20"
+          >
+            <Mail size={20} /> Get in touch
+          </a>
+        </motion.div>
       </motion.section>
 
       {/* Footer / Visitor Counter */}

@@ -1,24 +1,28 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #8a2be2;
+    --color-primary: #d97757;
     --color-secondary: #00d4ff;
     --font-sans: "Inter", sans-serif;
     --font-serif: "Merriweather", serif;
 }
 
 :root {
-    --background: #fcfcfc;
-    --foreground: #222222;
-    --subtext: #555555;
-    --border: #e5e5e5;
+    --background: #FDFDFB; /* Very light warm off-white (Claude light) */
+    --foreground: #1c1b1a; /* Almost black */
+    --subtext: #595551;
+    --border: #e8e6e1;
+    --card-bg: #ffffff;
+    --accent: #d97757; /* Claude brand coral/orange */
 }
 
 [data-theme='dark'] {
-    --background: #191919;
-    --foreground: #f0f0f0;
-    --subtext: #a0a0a0;
-    --border: #333333;
+    --background: #1c1a17; /* Claude dark warm gray */
+    --foreground: #e8e6e3;
+    --subtext: #a19c95;
+    --border: #3b3834;
+    --card-bg: #22201d; /* Slightly lighter for cards */
+    --accent: #d97757;
 }
 
 body {
@@ -28,7 +32,7 @@ body {
 }
 
 .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-600 via-pink-500 to-blue-400 font-extrabold;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#d97757] via-[#e89b78] to-[#d97757] font-extrabold;
 }
 
 .experience-card {
@@ -36,8 +40,8 @@ body {
 }
 
 .experience-dot {
-    @apply absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-purple-500;
-    box-shadow: 0 0 8px rgba(168, 85, 247, 0.5);
+    @apply absolute left-[-5px] top-2 w-2 h-2 rounded-full bg-[var(--accent)];
+    box-shadow: 0 0 8px rgba(217, 119, 87, 0.4);
 }
 
 .text-sub {
