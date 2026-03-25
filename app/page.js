@@ -80,7 +80,7 @@ export default function Home() {
             variants={fadeInUp}
             className="text-2xl font-sans font-medium text-sub"
           >
-            Software Developer & Cloud Practitioner
+            Software Engineer & Web Developer
           </motion.p>
           <motion.p
             variants={fadeInUp}
@@ -195,17 +195,51 @@ export default function Home() {
           <motion.div variants={fadeInUp} className="experience-card">
             <div className="experience-dot"></div>
             <p className="text-sm font-semibold text-sub/60 mb-2 tracking-wider">
-              July, 2022 - 2023
+              02/2024 - Present
             </p>
             <h3 className="text-2xl font-serif font-bold leading-none mb-3">
-              System Engineer
+              IT Specialist
             </h3>
             <p className="text-[var(--accent)] font-bold mb-4 tracking-wide text-lg">
-              Company Y
+              DaouKiwoom - Top Dev
+            </p>
+            <p className="experience-summary">Responsibilities included:</p>
+            <ul className="experience-list">
+              <li>
+                Monitoring - managing the company network and server systems, including
+                DrayTek, UTM, Synology NAS, Dell EMC (ESXi).
+              </li>
+              <li>
+                Build and maintain IT asset and user allocation lists,
+                including allocation and recovery tracking.
+              </li>
+              <li>
+                Install and maintain end-user devices, IT equipment, servers,
+                and storage equipment.
+              </li>
+              <li>Plan budget needs for company IT equipment procurement.</li>
+            </ul>
+          </motion.div>
+          <motion.div variants={fadeInUp} className="experience-card">
+            <div className="experience-dot"></div>
+            <p className="text-sm font-semibold text-sub/60 mb-2 tracking-wider">
+              July, 2023 - November, 2023
+            </p>
+            <h3 className="text-2xl font-serif font-bold leading-none mb-3">
+              Frontend Developer Intern
+            </h3>
+            <p className="text-[var(--accent)] font-bold mb-4 tracking-wide text-lg">
+              Phu Hung Securities
             </p>
             <p className="text-sub leading-relaxed text-lg">
-              Assisted in maintaining large-scale distributed systems and
-              optimizing infrastructure performance.
+              <ul   className="experience-list">
+                <li>Working with Restful API. responsible for developing the web-app
+                interface according to customer requirements ( real project ) and
+                actively researching new technologies during my internship</li>
+
+                <li> Work with the specific aspects of the securities industry.</li>
+              <li>Working with real-time stocks data, manage performance and adjusting user feedback ( Dealing dept )</li>
+              </ul>
             </p>
           </motion.div>
         </div>

@@ -44,6 +44,20 @@ body {
     box-shadow: 0 0 8px rgba(217, 119, 87, 0.4);
 }
 
+.experience-summary {
+    @apply text-lg leading-relaxed mb-3;
+    color: var(--subtext);
+}
+
+.experience-list {
+    @apply text-lg leading-relaxed space-y-3 list-disc pl-6;
+    color: var(--subtext);
+}
+
+.experience-list li::marker {
+    color: var(--accent);
+}
+
 .text-sub {
     color: var(--subtext);
 }
